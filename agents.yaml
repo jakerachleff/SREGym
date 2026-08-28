@@ -61,3 +61,14 @@ agents:
     install_script: null
     agent_version: null
     container_isolation: false
+  - name: devin
+    kickoff_command: python -m clients.devin.driver
+    kickoff_workdir: .
+    kickoff_env:
+      DEVIN_API_URL: "https://api.devin.ai"
+      DEVIN_ORG_API_KEY: "<your-service-user-api-key>"
+      DEVIN_ORG_ID: "<your-org-id>"
+      DEVIN_ONCALL_MODE: "false"
+    install_script: null
+    agent_version: null
+    container_isolation: false
